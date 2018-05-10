@@ -1,133 +1,24 @@
 <html manifest="offline.manifest">
   <head>
-    <style>
-      
-    </style>
-    <script type="text/javascript">
-      /*
-        document.getElementsByClassname("")
-      */
-      
-      document.addEventListener("DOMContentLoaded", function(event) {
-        var listItems = Array.prototype.slice.call(document.getElementsByTagName("li"));
-        var counter = 0;
-        listItems.forEach(function(element) {
-          counter++;
-          console.log(counter);
-          console.log(element);
-        });
-      });
-      
-      window.addEventListener("online", function() {
-          alert("online");
-        });
-      window.addEventListener("offline", function() {
-        alert("offline");
-      });
-      
-    </script>
+    <script type="text/javascript" src="wikisearch.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <form>
-      <ul>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
-        <li>
-          <input type="checkbox" />
-          <a href="#">
-            list item
-          </a>
-        </li>
+    <div class="test-container">
+      <form class="searchbox">
+        <input
+          id="query-input"
+          class="searchbox-input"
+          type="text"
+          autocomplete="off"
+          onfocus="this.placeholder=''"
+          onBlur="this.placeholder='Search'"
+          placeholder="Search"      />
+      </form>
+      <ul class="results">
       </ul>
-    </form>
+    </div>
   </body>
 </html>

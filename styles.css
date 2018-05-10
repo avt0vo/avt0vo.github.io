@@ -1,45 +1,79 @@
+html, body {
+  height: 100%;
+  font-family: 'Open Sans';
+	font-weight: 300;
+  color:#fff;
+}
+
 body {
-  margin:0;
+  margin:0 auto;
   padding:0;
+  width:100%;
   font-size:3em;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
-  /* */
+  background: none;
+  color:#fff;
 }
+
+.test-container {
+}
+
 ul {
   background:black;
   padding:0;
   margin:0;
+  overflow:hidden;
 }
+
 li {
-  padding:1em;
+  padding:1em .25em;
   margin:1px 0;
   background:white;
   color:black;
 }
+
 li a {
   color:black;
   text-decoration:none;
+  padding:0;
 }
-form {
+
+li h3 {
+  padding:0;
+  margin:0 0 1em;
+}
+
+li p {
+  padding:0;
+  margin:0;
+}
+
+.searchbox {
   margin:0;
   padding:0;
-  
-}
-input[type="checkbox"] {
-  padding:1em;
-  color:red;
-  background-color:red;
-  height:3em;
-  width:3em;
+  width:100%;
   border:none;
-  box-shadow:none;
-  -webkit-appearance:push-button;
+  background:#000;
 }
-  input[type="checkbox"]:checked {
-    box-shadow: 0 0 0 3px hotpink;
-  }
+
+.searchbox-input {
+  margin: 0 auto;
+  width:100%;
+  border:0;
+  padding:0;
+  color:#fff;
+  font-size:3em;
+  font-family: 'Open Sans';
+	font-weight: 300;
+  background: transparent;
+  text-align:center;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
 }
