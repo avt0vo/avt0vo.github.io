@@ -33,6 +33,7 @@
       "videos": "https://api.twitch.tv/kraken/channels/freecodecamp/videos"
     }
   },
+  {
   "_links": {
     "self": "https://api.twitch.tv/kraken/streams/freecodecamp",
     "channel": "https://api.twitch.tv/kraken/channels/freecodecamp"
